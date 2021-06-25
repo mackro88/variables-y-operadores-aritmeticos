@@ -92,3 +92,34 @@ document.write( "<br>"+
                 "<br>______________________________________________");
 
 ////////////////////////////////////////////////////////////////
+
+// Punto 5
+// Crear un programa que solicite al usuario 5 números y realice los cálculos que se piden a continuación.
+
+alert("Suma y promedio de 5 números"); 
+// Pedir al usuario que ingrese 5 números
+let primer = prompt("Ingresa el primer número"); // El usuario ingresa el primer valor.
+let segundo = prompt("Ingresa el segundo número"); // El usuario ingresa el segundo valor.
+let tercer = prompt("Ingresa el tercer número"); // El usuario ingresa el tercer valor.
+let cuarto = prompt("Ingresa el cuarto número"); // El usuario ingresa el cuarto valor.
+let quinto = prompt("Ingresa el quinto número"); // El usuario ingresa el quinto valor.
+// Conversión de string a float
+primer = parseFloat(primer); 
+segundo = parseFloat(segundo); 
+tercer = parseFloat(tercer); 
+cuarto = parseFloat(cuarto); 
+quinto = parseFloat(quinto); 
+
+// La suma de todos los números.
+sum = (primer + segundo + tercer + cuarto + quinto);
+
+// El promedio de los 5 números ingresados.
+prom = sum / 5;
+
+// Mostramos los resultados al usuario
+document.write( "<br>"+
+                "<< Suma y promedio de 5 números >>" +
+                "<br>" +
+                "<br>Entre los números " +primer+ ", " +segundo+ ", " +tercer+ ", " +cuarto+ " y " +quinto+
+                "<br>su suma es: " +sum+ ", " +
+                "<br>y su promedio es: " +prom+ ".");
